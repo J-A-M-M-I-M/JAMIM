@@ -43,11 +43,11 @@ def recognize_gesture(finger_status):
     thumb, index, middle, ring, pinky = finger_status
 
     if index and middle and not ring and not pinky:
-        return "가위"
+        return "scissors"  
     elif not index and not middle and not ring and not pinky:
-        return "바위"
+        return "rock"
     elif index and middle and ring and pinky:
-        return "보"
+        return "paper"
     else:
         return None
 
